@@ -1,5 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="AwsAmazon.aspx.vb" Inherits="ProyectoAplicado.AwsAmazon" %>
-
+﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Tensorflow.aspx.vb" Inherits="ProyectoAplicado.Tensorflow" %>
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
