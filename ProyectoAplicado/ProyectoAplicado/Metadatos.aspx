@@ -22,7 +22,7 @@
                 <a class="nav-item nav-link active" href="#">Metadatos</a>
                 <a class="nav-item nav-link" href="Tensorflow.aspx">Tensorflow</a>
                 <a class="nav-item nav-link" href="AwsAmazon.aspx">AWS Amazon</a>
-                <a class="nav-item nav-link disabled" href="#">5G</a>
+                <a class="nav-item nav-link" href="FiveG.aspx">5G</a>
                 <a class="nav-item nav-link" href="Datawarehouse.aspx">Data Warehouse</a>
             </div>
         </div>

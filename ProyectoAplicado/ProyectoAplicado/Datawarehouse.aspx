@@ -7,7 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="Content/bootstrap.css" />
 
-    <title>Ayudas Educativas - AWS</title>
+    <title>Ayudas Educativas - Data Warehouse</title>
 </head>
 <body class="d-flex flex-column min-vh-100 text-center">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
@@ -21,7 +21,7 @@
                 <a class="nav-item nav-link" href="Metadatos.aspx">Metadatos</a>
                 <a class="nav-item nav-link" href="Tensorflow.aspx">Tensorflow</a>
                 <a class="nav-item nav-link" href="AwsAmazon">AWS Amazon</a>
-                <a class="nav-item nav-link disabled" href="#">5G</a>
+                <a class="nav-item nav-link" href="FiveG.aspx">5G</a>
                 <a class="nav-item nav-link active" href="#">Data Warehouse</a>
             </div>
         </div>
@@ -45,7 +45,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">PDF Metadatos</h4>
+                                <h4 class="modal-title">PDF Data Warehouse</h4>
                             </div>
                             <div class="modal-body">
 

@@ -131,6 +131,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Audio\5g.mp3" />
     <Content Include="Audio\AWS.mp3" />
     <Content Include="Audio\DataWarehouse.mp3" />
     <Content Include="Audio\metadatos.mp3" />
@@ -158,7 +159,9 @@
     <Content Include="Datawarehouse.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="FiveG.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Images\5g.jpg" />
     <Content Include="Images\AWS.png" />
     <Content Include="Images\DataWarehouse.png" />
     <Content Include="Images\metadatos.jpg" />
@@ -196,6 +199,7 @@
     <Content Include="Pdf\tensorflow.pdf" />
     <Content Include="Pdf\aws.pdf" />
     <Content Include="Pdf\DataWarehouse.pdf" />
+    <Content Include="Pdf\5g.pdf" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="index.aspx" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -265,6 +269,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.vb">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FiveG.aspx.designer.vb">
+      <DependentUpon>FiveG.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FiveG.aspx.vb">
+      <DependentUpon>FiveG.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Global.asax.vb">
       <DependentUpon>Global.asax</DependentUpon>

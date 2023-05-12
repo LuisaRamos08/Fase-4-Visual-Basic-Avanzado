@@ -22,7 +22,7 @@
                 <a class="nav-item nav-link" href="Metadatos.aspx">Metadatos</a>
                 <a class="nav-item nav-link" href="Tensorflow.aspx">Tensorflow</a>
                 <a class="nav-item nav-link" href="AwsAmazon.aspx">AWS Amazon</a>
-                <a class="nav-item nav-link disabled" href="#">5G</a>
+                <a class="nav-item nav-link" href="FiveG.aspx">5G</a>
                 <a class="nav-item nav-link" href="Datawarehouse.aspx">Data Warehouse</a>
             </div>
         </div>
@@ -59,6 +59,11 @@
                     <div>
                         <input type="radio" id="page4" name="pages" onclick="window.location.href = 'https://es.wikipedia.org/wiki/Almac%C3%A9n_de_datos'">
                         <label for="page3">Data Warehouse</label><br>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="page5" name="pages" onclick="window.location.href = 'https://es.wikipedia.org/wiki/Telefon%C3%ADa_m%C3%B3vil_5G'">
+                        <label for="page3">5G</label><br>
                     </div>
                 </div>
             </div>

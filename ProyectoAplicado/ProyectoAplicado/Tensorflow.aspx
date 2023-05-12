@@ -21,7 +21,7 @@
                 <a class="nav-item nav-link" href="Metadatos.aspx">Metadatos</a>
                 <a class="nav-item nav-link active" href="#">Tensorflow</a>
                 <a class="nav-item nav-link" href="AwsAmazon.aspx">AWS Amazon</a>
-                <a class="nav-item nav-link disabled" href="#">5G</a>
+                <a class="nav-item nav-link" href="FiveG.aspx">5G</a>
                 <a class="nav-item nav-link" href="Datawarehouse.aspx">Data Warehouse</a>
             </div>
         </div>
@@ -43,7 +43,7 @@
                         <div class="modal-content">
                             <div class="modal-header">
                                 <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">PDF Metadatos</h4>
+                                <h4 class="modal-title">PDF TensorFlow</h4>
                             </div>
                             <div class="modal-body">
 
