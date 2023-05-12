@@ -22,7 +22,7 @@
                 <a class="nav-item nav-link" href="Tensorflow.aspx">Tensorflow</a>
                 <a class="nav-item nav-link active" href="#">AWS Amazon</a>
                 <a class="nav-item nav-link disabled" href="#">5G</a>
-                <a class="nav-item nav-link disabled" href="#">Data Warehouse</a>
+                <a class="nav-item nav-link" href="Datawarehouse.aspx">Data Warehouse</a>
             </div>
         </div>
     </nav>
@@ -37,6 +37,28 @@
 
                 </p>
                 <asp:Image ID="Image1" runat="server" Height="300px" ImageUrl="~/Images/AWS.png" />
+                <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#openPdf">Ver PDF</button>
+
+                <div id="openPdf" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-xl">
+
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">PDF Metadatos</h4>
+                            </div>
+                            <div class="modal-body">
+
+                                <iframe id="pdf" runat="server" width="100%" height="500"></iframe>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-6 pt-5">
                 <h2 class="mb-3">Video</h2>

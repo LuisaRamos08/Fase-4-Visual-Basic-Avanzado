@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="vb" AutoEventWireup="false" MasterPageFile="~/Site.Master" CodeBehind="Tensorflow.aspx.vb" Inherits="ProyectoAplicado.Tensorflow" %>
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="TensorFlow.aspx.vb" Inherits="ProyectoAplicado.TensorFlow1" %>
+
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -6,7 +7,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="Content/bootstrap.css" />
 
-    <title>Ayudas Educativas - AWS</title>
+    <title>Ayudas Educativas - TensorFlow</title>
 </head>
 <body class="d-flex flex-column min-vh-100 text-center">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-3">
@@ -18,10 +19,10 @@
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="index.aspx">Inicio</a>
                 <a class="nav-item nav-link" href="Metadatos.aspx">Metadatos</a>
-                <a class="nav-item nav-link" href="Tensorflow.aspx">Tensorflow</a>
-                <a class="nav-item nav-link active" href="#">AWS Amazon</a>
+                <a class="nav-item nav-link active" href="#">Tensorflow</a>
+                <a class="nav-item nav-link" href="AwsAmazon.aspx">AWS Amazon</a>
                 <a class="nav-item nav-link disabled" href="#">5G</a>
-                <a class="nav-item nav-link disabled" href="#">Data Warehouse</a>
+                <a class="nav-item nav-link" href="Datawarehouse.aspx">Data Warehouse</a>
             </div>
         </div>
     </nav>
@@ -30,18 +31,37 @@
             <div class="col-6 pt-5">
                 <h2 class="mb-3">AWS Amazon</h2>
                 <p>
-                    Amazon Web Services (AWS) es una plataforma integral de computación en la nube que incluye ofertas de infraestructura 
-                    como servicio (IaaS) y de plataforma como servicio (PaaS). Los servicios de AWS ofrecen soluciones escalables para la 
-                    computación, el almacenamiento, las bases de datos, el análisis y mucho más.
+                    Para el desarrollo de la inteligencia artificial y el aprendizaje automático, TensorFlow juega un papel muy importante. Pero ¿qué es TensorFlow? Se trata de una librería de código libre para Machine Learning (ML). Fue desarrollado por Google para satisfacer las necesidades a partir de redes neuronales artificiales. TensorFlow te permite construir y entrenar redes neuronales para detectar patrones y razonamientos usados por los humanos.
 
                 </p>
-                <asp:Image ID="Image1" runat="server" Height="300px" ImageUrl="~/Images/AWS.png" />
+                <asp:Image ID="Image1" runat="server" Height="300px" ImageUrl="~/Images/tensorflow.jpg" />
+                 <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#openPdf">Ver PDF</button>
+
+                <div id="openPdf" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-xl">
+
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">PDF Metadatos</h4>
+                            </div>
+                            <div class="modal-body">
+
+                                <iframe id="pdf" runat="server" width="100%" height="500"></iframe>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-6 pt-5">
                 <h2 class="mb-3">Video</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/x2vrg7HuM6g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <h2 class="mb-3">Audio</h2>
-                <audio controls src="Audio/AWS.mp3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/szNPBn_RBfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>                <h2 class="mb-3">Audio</h2>
+                <audio controls src="Audio/tensorflow.mp3">
                     <p>Su navegador no soporta el elemento de audio.</p>
                 </audio>
             </div>

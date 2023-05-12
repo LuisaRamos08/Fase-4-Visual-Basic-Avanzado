@@ -20,10 +20,10 @@
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="index.aspx">Inicio</a>
                 <a class="nav-item nav-link active" href="#">Metadatos</a>
-                <a class="nav-item nav-link disabled" href="#">Tensorflow</a>
+                <a class="nav-item nav-link" href="Tensorflow.aspx">Tensorflow</a>
                 <a class="nav-item nav-link" href="AwsAmazon.aspx">AWS Amazon</a>
                 <a class="nav-item nav-link disabled" href="#">5G</a>
-                <a class="nav-item nav-link disabled" href="#">Data Warehouse</a>
+                <a class="nav-item nav-link" href="Datawarehouse.aspx">Data Warehouse</a>
             </div>
         </div>
     </nav>
@@ -34,6 +34,29 @@
                 <h2 class="mb-3">Metadatos</h2>
                 <p>Los metadatos, consisten en información que caracteriza datos, describen el contenido, calidad, condiciones, historia, disponibilidad y otras características de los datos. En el ámbito bibliotecario por ejemplo: el catalogo de una biblioteca o una ficha bibliográfica son metadatos. Para la creación de estos metadatos se usan reglas de catalogación y formatos. Pero los metadatos son también, la información generada por los usuarios cuando usan tecnologías digitales, por ejemplo, en el caso de un email o una llamada, son metadatos el horario, la fecha en que se envió y la localización desde donde se conectó el usuario la última vez, entre otros.</p>
                 <asp:Image ID="Image1" runat="server" Height="300px" ImageUrl="~/Images/metadatos.jpg" />
+                <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#openPdf">Ver PDF</button>
+
+                <div id="openPdf" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-xl">
+
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">PDF Metadatos</h4>
+                            </div>
+                            <div class="modal-body">
+
+                                <iframe id="pdf" runat="server" width="100%" height="500"></iframe>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
             </div>
             <div class="col-6 pt-5">
                 <h2 class="mb-3">Video</h2>

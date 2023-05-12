@@ -20,10 +20,10 @@
             <div class="navbar-nav">
                 <a class="nav-item nav-link active" href="#">Inicio</a>
                 <a class="nav-item nav-link" href="Metadatos.aspx">Metadatos</a>
-                <a class="nav-item nav-link disabled" href="#">Tensorflow</a>
+                <a class="nav-item nav-link" href="Tensorflow.aspx">Tensorflow</a>
                 <a class="nav-item nav-link" href="AwsAmazon.aspx">AWS Amazon</a>
                 <a class="nav-item nav-link disabled" href="#">5G</a>
-                <a class="nav-item nav-link disabled" href="#">Data Warehouse</a>
+                <a class="nav-item nav-link" href="Datawarehouse.aspx">Data Warehouse</a>
             </div>
         </div>
     </nav>
@@ -54,6 +54,11 @@
                     <div>
                         <input type="radio" id="page3" name="pages" onclick="window.location.href = 'https://es.wikipedia.org/wiki/TensorFlow'">
                         <label for="page3">TensorFlow</label><br>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="page4" name="pages" onclick="window.location.href = 'https://es.wikipedia.org/wiki/Almac%C3%A9n_de_datos'">
+                        <label for="page3">Data Warehouse</label><br>
                     </div>
                 </div>
             </div>

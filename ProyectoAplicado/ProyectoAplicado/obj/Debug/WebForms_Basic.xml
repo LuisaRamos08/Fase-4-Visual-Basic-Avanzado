@@ -46,9 +46,45 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
+<member name="F:ProyectoAplicado.AwsAmazon._pdf">
+<summary>
+Control pdf.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoAplicado.Datawarehouse._Image1">
+<summary>
+Control Image1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoAplicado.Datawarehouse._pdf">
+<summary>
+Control pdf.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
 <member name="F:ProyectoAplicado.Metadatos._Image1">
 <summary>
 Control Image1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoAplicado.Metadatos._pdf">
+<summary>
+Control pdf.
 </summary>
 <remarks>
 Campo generado automáticamente.
@@ -64,9 +100,18 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ProyectoAplicado.Tensorflow._Image1">
+<member name="F:ProyectoAplicado.TensorFlow1._Image1">
 <summary>
 Control Image1.
+</summary>
+<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+<member name="F:ProyectoAplicado.TensorFlow1._pdf">
+<summary>
+Control pdf.
 </summary>
 <remarks>
 Campo generado automáticamente.
