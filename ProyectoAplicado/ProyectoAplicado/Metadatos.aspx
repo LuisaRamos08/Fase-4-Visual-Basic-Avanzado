@@ -24,6 +24,7 @@
                 <a class="nav-item nav-link" href="AwsAmazon.aspx">AWS Amazon</a>
                 <a class="nav-item nav-link" href="FiveG.aspx">5G</a>
                 <a class="nav-item nav-link" href="Datawarehouse.aspx">Data Warehouse</a>
+                <a class="nav-item nav-link bg-danger active rounded" href="Login.aspx">Cerrar sesión</a>
             </div>
         </div>
     </nav>
@@ -56,7 +57,83 @@
                         </div>
                     </div>
                 </div>
-                
+
+                <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#openExam">Realizar prueba</button>
+
+                <div id="openExam" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-xl">
+
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Prueba metadatos</h4>
+                            </div>
+                            <div class="modal-body d-flex flex-column">
+
+                                <div class="container">
+                                    <form id="form1" runat="server">
+                                        <div class="form-group">
+                                            <asp:Label ID="lblQuestion1" runat="server" Text="Pregunta 1: ¿Qué son los metadatos?" CssClass="pb-5" />
+                                             <br />
+                                            <asp:RadioButtonList ID="rblQuestion1" runat="server" CssClass="form-control d-flex justify-content-center align-content-center">
+                                                <asp:ListItem Text="a) Datos sobre otros datos" Value="Correcta" />
+                                                <asp:ListItem Text="b) Datos sobre el clima" Value="Incorrecta" />
+                                                <asp:ListItem Text="c) Datos sobre la economía" Value="Incorrecta" />
+                                            </asp:RadioButtonList>
+                                            <br />
+
+                                            <asp:Label ID="lblQuestion2" runat="server" Text="Pregunta 2: ¿Dónde se pueden encontrar metadatos?" CssClass="pb-5" />
+                                             <br />
+                                            <asp:RadioButtonList ID="rblQuestion2" runat="server" CssClass="form-control d-flex justify-content-center align-content-center">
+                                                <asp:ListItem Text="a) En una base de datos" Value="Incorrecta" />
+                                                <asp:ListItem Text="b) En un archivo de imagen" Value="Incorrecta" />
+                                                <asp:ListItem Text="c) Todas las anteriores" Value="Correcta" />
+                                            </asp:RadioButtonList>
+                                             <br />
+
+                                            <asp:Label ID="lblQuestion3" runat="server" Text="Pregunta 3: ¿Para qué se utilizan los metadatos?" CssClass="pb-5" />
+                                             <br />
+                                            <asp:RadioButtonList ID="rblQuestion3" runat="server" CssClass="form-control d-flex justify-content-center align-content-center">
+                                                <asp:ListItem Text="a) Para describir el contenido de un archivo" Value="Incorrecta" />
+                                                <asp:ListItem Text="b) Para facilitar la búsqueda y organización de archivos" Value="Incorrecta" />
+                                                <asp:ListItem Text="c) Todas las anteriores" Value="Correcta" />
+                                            </asp:RadioButtonList>
+                                             <br />
+
+                                             <asp:Label ID="lblQuestion4" runat="server" Text="Pregunta 4: ¿Quién puede ver los metadatos de un archivo?" CssClass="pb-5" />
+                                             <br />
+                                            <asp:RadioButtonList ID="rblQuestion4" runat="server" CssClass="form-control d-flex justify-content-center align-content-center">
+                                                <asp:ListItem Text="a) Solo el propietario del archivo" Value="Incorrecta" />
+                                                <asp:ListItem Text="b) Cualquiera que tenga acceso al archivo" Value="Correcta" />
+                                                <asp:ListItem Text="c) Nadie puede verlos" Value="Incorrecta" />
+                                            </asp:RadioButtonList>
+                                             <br />
+
+                                            <asp:Label ID="lblQuestion5" runat="server" Text="Pregunta 5: ¿Se pueden modificar los metadatos de un archivo?" CssClass="pb-5" />
+                                             <br />
+                                            <asp:RadioButtonList ID="rblQuestion5" runat="server" CssClass="form-control d-flex justify-content-center align-content-center">
+                                                <asp:ListItem Text="a) Sí, con herramientas especializadas" Value="Correcta" />
+                                                <asp:ListItem Text="b) No, son permanentes" Value="Incorrecta" />
+                                                <asp:ListItem Text="c) Depende del tipo de archivo" Value="Incorrecta" />
+                                            </asp:RadioButtonList>
+                                             <br />
+                                        </div>
+                                        <br />
+
+                                        <asp:Button ID="btnSubmit" runat="server" Text="Enviar" OnClick="btnSubmit_Click" CssClass="btn btn-primary" />
+
+                                    </form>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="col-6 pt-5">
                 <h2 class="mb-3">Video</h2>

@@ -23,6 +23,7 @@
                 <a class="nav-item nav-link active" href="#">AWS Amazon</a>
                 <a class="nav-item nav-link" href="FiveG.aspx">5G</a>
                 <a class="nav-item nav-link" href="Datawarehouse.aspx">Data Warehouse</a>
+                <a class="nav-item nav-link bg-danger active rounded" href="Login.aspx">Cerrar sesión</a>
             </div>
         </div>
     </nav>
@@ -50,6 +51,92 @@
                             <div class="modal-body">
 
                                 <iframe id="pdf" runat="server" width="100%" height="500"></iframe>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#openExam">Realizar prueba</button>
+
+                <div id="openExam" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-xl">
+
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-bs-dismiss="modal">&times;</button>
+                                <h4 class="modal-title">Prueba Amazon</h4>
+                            </div>
+                            <div class="modal-body d-flex flex-column">
+
+                                <div class="container">
+                                    <form id="form1" runat="server">
+                                        <div class="form-group">
+                                            <asp:Label ID="lblQuestion1" runat="server" Text="Pregunta 1: ¿Cuántos servicios ofrece Aws Amazon?" CssClass="pb-5" />
+                                            <br />
+                                            <asp:RadioButtonList ID="rblQuestion1" runat="server" CssClass="form-control d-flex justify-content-center align-content-center">
+                                                <asp:ListItem Text="a) Más de 200 servicios" Value="Correcta" />
+                                                <asp:ListItem Text="b) Más de 300" Value="Incorrecta" />
+                                                <asp:ListItem Text="c) Más de 500" Value="Incorrecta" />
+                                                <asp:ListItem Text="d) Más de 50" Value="Incorrecta" />
+
+                                            </asp:RadioButtonList>
+                                            <br />
+
+                                            <asp:Label ID="lblQuestion2" runat="server" Text="Pregunta 2: ¿Que ofrece Aws Amazon?" CssClass="pb-5" />
+                                            <br />
+                                            <asp:RadioButtonList ID="rblQuestion2" runat="server" CssClass="form-control d-flex justify-content-center align-content-center">
+                                                <asp:ListItem Text="a) Espacio" Value="Incorrecta" />
+                                                <asp:ListItem Text="b) Tecnología de infraestructura, almacenamiento, base de datos, tecnologías emergentes, inteligencia artificial, lago de datos y análisis e internet de las cosas." Value="Correcta" />
+                                                <asp:ListItem Text="c) Base de datos" Value="Incorrecta" />
+                                                <asp:ListItem Text="d) Internet" Value="Incorrecta" />
+
+                                            </asp:RadioButtonList>
+                                            <br />
+
+                                            <asp:Label ID="lblQuestion3" runat="server" Text="Pregunta 3: ¿Por qué  Aws Amazon está diseñada para diferentes tipos de aplicaciones?" CssClass="pb-5" />
+                                            <br />
+                                            <asp:RadioButtonList ID="rblQuestion3" runat="server" CssClass="form-control d-flex justify-content-center align-content-center">
+                                                <asp:ListItem Text="a) Para un mejor rendimiento" Value="Incorrecta" />
+                                                <asp:ListItem Text="b) Para elegir la herramienta adecuada para el trabajo fin de tener el mejor costo y rendimiento" Value="Correcta" />
+                                                <asp:ListItem Text="c) Para navegar más rápido" Value="Incorrecta" />
+                                                <asp:ListItem Text="d) Para un buen uso" Value="Incorrecta" />
+
+                                            </asp:RadioButtonList>
+                                            <br />
+
+                                            <asp:Label ID="lblQuestion4" runat="server" Text="Pregunta 4: ¿Quién tiene la comunidad más grande de clientes y socios?" CssClass="pb-5" />
+                                            <br />
+                                            <asp:RadioButtonList ID="rblQuestion4" runat="server" CssClass="form-control d-flex justify-content-center align-content-center">
+                                                <asp:ListItem Text="a) AWS EC2" Value="Incorrecta" />
+                                                <asp:ListItem Text="b) AWS lamba" Value="Incorrecta" />
+                                                <asp:ListItem Text="c) Aws Amazon" Value="Correcta" />
+                                                <asp:ListItem Text="d) Tensor flow" Value="Incorrecta" />
+
+                                            </asp:RadioButtonList>
+                                            <br />
+
+                                            <asp:Label ID="lblQuestion5" runat="server" Text="Pregunta 5: ¿Cuál es el entorno de informática en la nube más flexible y seguro disponible en la actualidad?" CssClass="pb-5" />
+                                            <br />
+                                            <asp:RadioButtonList ID="rblQuestion5" runat="server" CssClass="form-control d-flex justify-content-center align-content-center">
+                                                <asp:ListItem Text="a) Aws Amazon" Value="Correcta" />
+                                                <asp:ListItem Text="b) La nube" Value="Incorrecta" />
+                                                <asp:ListItem Text="c) Aws cloud9" Value="Incorrecta" />
+                                                <asp:ListItem Text="d) Google Drive" Value="Incorrecta" />
+
+                                            </asp:RadioButtonList>
+                                            <br />
+                                        </div>
+                                        <br />
+
+                                        <asp:Button ID="btnSubmit" runat="server" Text="Enviar" OnClick="btnSubmit_Click" CssClass="btn btn-primary" />
+
+                                    </form>
+                                </div>
 
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>

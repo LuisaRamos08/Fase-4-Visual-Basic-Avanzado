@@ -24,6 +24,7 @@
                 <a class="nav-item nav-link" href="AwsAmazon.aspx">AWS Amazon</a>
                 <a class="nav-item nav-link" href="FiveG.aspx">5G</a>
                 <a class="nav-item nav-link" href="Datawarehouse.aspx">Data Warehouse</a>
+                <a class="nav-item nav-link bg-danger active rounded" href="Login.aspx">Cerrar sesión</a>
             </div>
         </div>
     </nav>
